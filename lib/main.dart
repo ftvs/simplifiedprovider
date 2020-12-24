@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             LoadedView<List<Post>>(
               load: () => api.posts(),
-              builder: (context, List<Post> model) {
+              builder: (_, model) {
                 return Column(children: [
                   Text(model[0].title),
                   Text(model[1].title),
